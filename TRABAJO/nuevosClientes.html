@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevos Clientes</title>
+    <link rel="stylesheet" href="trabajo.css">
+ </head>
+ <body>
+   
+   <div class="container2">
+      <a class="container-link" href="login.php">
+         <header>SI YA ERES CLIENTE,<strong> PINCHA AQUI!!</strong> </header>
+      </a>
+   </div>
+
+    <!-- Formulario para registro de nuevos clientes -->  
+    <h2><i>Introduce tus datos para el registro: </i></h2>
+    <form action="guardarCliente.php" method="POST">
+        <label for="nombre">Nombre: *</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellidos">Apellidos: *</label>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+        <label for="email">Email: *</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Contraseña: *</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="dni">DNI: *</label>
+        <input type="text" id="dni" name="dni" required><br><br>
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad"><br><br>
+
+        <label for="cp">CP:</label>
+        <input type="text" id="cp" name="cp"><br><br>
+
+        <input type="submit" value="Registrarme">
+        <p>* Los datos son obligatorios</p>
+    </form>
+
+    <div class="volver">
+      <a href="index.html">Volver al inicio</a>
+    </div>
+
+ </body>
+ </html>
+ 
